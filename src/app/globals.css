@@ -16,7 +16,7 @@
 
 body {
   color: var(--foreground);
-  background: var(--background);
+  background: #f9fafb;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -24,4 +24,41 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+
+@layer utilities {
+  .parallelogram {
+    @apply transform items-center -translate-x-1/2 -translate-y-1/2;
+    transform: translate(-50%, -50%) skew(-20deg);
+  }
+}
+
+.roboto {
+  font-family: var(--font-roboto);
+}
+
+.josefin {
+  font-family: var(--font-josefin);
+}
+
+.bebas {
+  font-family: var(--font-bebas);
+}
+
+.bricolage {
+  font-family: var(--font-bricolage);
+}
+
+.lato {
+  font-family: var(--font-lato);
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
