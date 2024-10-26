@@ -138,8 +138,8 @@ export default function Heropage() {
                                 <FaBible className="absolute group-hover:text-customOrange text-white" />
                             </div>
                         </div>
-                        <div className="font-bold mt-3 lg:mt-5 group-hover:text-white">Word & Power Service</div>
-                        <div className="mt-4 xs:text-[12px] group-hover:text-white">
+                        <div className="font-bold mt-3 lg:mt-5 text-black group-hover:text-white">Word & Power Service</div>
+                        <div className="mt-4 xs:text-[12px] text-black group-hover:text-white">
                             Elevate your Tuesdays with the WORD & POWER service: Join us weekly at 5pm to gain a much deeper understanding of the word of God.
                         </div>
                     </div>
@@ -152,8 +152,8 @@ export default function Heropage() {
                                 <FaChair className="absolute group-hover:text-customOrange text-white" />
                             </div>
                         </div>
-                        <div className="font-bold mt-3 lg:mt-5 group-hover:text-white">Midweek Service</div>
-                        <div className="mt-4 xs:text-[12px] group-hover:text-white">
+                        <div className="font-bold mt-3 lg:mt-5 text-black group-hover:text-white">Midweek Service</div>
+                        <div className="mt-4 xs:text-[12px] text-black group-hover:text-white">
                             Join us every Wednesday for our midweek service where we dive deeper into the word and strengthen our faith.
                         </div>
                     </div>
