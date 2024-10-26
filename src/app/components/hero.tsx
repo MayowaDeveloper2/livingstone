@@ -107,7 +107,7 @@ export default function Heropage() {
 
             {/* Welcome Message */}
             <div className="w-full text-center mx-auto">
-                <div className="bricolage text-[20px] lg:text-4xl lg:mt-5 font-bold">Welcome to Church</div>
+                <div className="bricolage text-[20px] lg:text-4xl lg:mt-5 text-black font-bold">Welcome to Church</div>
                 <div className="text-customOrange lg:text-[18px] sm:text-[14px] xs:text-[14px]">
                     A Christian organization with the aim of soul winning, deliverance, and getting people to know more about the Holy Ghost.
                 </div>
@@ -124,8 +124,8 @@ export default function Heropage() {
                                 <PiMicrophoneStageFill className="absolute group-hover:text-customOrange text-white" />
                             </div>
                         </div>
-                        <div className="font-bold mt-3 lg:mt-5">Join Us Every Sunday for a Glorious Sunday Service</div>
-                        <div className="mt-4 xs:text-[12px]">
+                        <div className="font-bold mt-3 lg:mt-5 text-black group-hover:text-white">Join Us Every Sunday for a Glorious Sunday Service</div>
+                        <div className="mt-4 xs:text-[12px] text-black group-hover:text-white">
                             Experience uplifting sermons, heartfelt fellowship, and spiritual uplifting every Sunday at our Glorious Sunday Service.
                         </div>
                     </div>
@@ -138,8 +138,8 @@ export default function Heropage() {
                                 <FaBible className="absolute group-hover:text-customOrange text-white" />
                             </div>
                         </div>
-                        <div className="font-bold mt-3 lg:mt-5">Word & Power Service</div>
-                        <div className="mt-4 xs:text-[12px]">
+                        <div className="font-bold mt-3 lg:mt-5 group-hover:text-white">Word & Power Service</div>
+                        <div className="mt-4 xs:text-[12px] group-hover:text-white">
                             Elevate your Tuesdays with the WORD & POWER service: Join us weekly at 5pm to gain a much deeper understanding of the word of God.
                         </div>
                     </div>
@@ -152,8 +152,8 @@ export default function Heropage() {
                                 <FaChair className="absolute group-hover:text-customOrange text-white" />
                             </div>
                         </div>
-                        <div className="font-bold mt-3 lg:mt-5">Midweek Service</div>
-                        <div className="mt-4 xs:text-[12px]">
+                        <div className="font-bold mt-3 lg:mt-5 group-hover:text-white">Midweek Service</div>
+                        <div className="mt-4 xs:text-[12px] group-hover:text-white">
                             Join us every Wednesday for our midweek service where we dive deeper into the word and strengthen our faith.
                         </div>
                     </div>
