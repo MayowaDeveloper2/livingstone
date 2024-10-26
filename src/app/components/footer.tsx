@@ -4,6 +4,8 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link"; // Import Next.js Link component
+import { LuCopy } from "react-icons/lu";
+import { IoIosCheckmarkCircle } from "react-icons/io";
 import avant from "../images/living stone fire revival logo.png";
 import facebook from "../images/facebook-rounded-border-svgrepo-com.svg";
 import instagram from "../images/instagram-rounded-border-svgrepo-com.svg";
@@ -12,6 +14,7 @@ import twitter from "../images/twitter-rounded-border-svgrepo-com.svg";
 
 export default function Footer() {
   const [showModal, setShowModal] = useState(false); 
+  const [copied, setCopied] = useState(false); // State to track copy status
 
   const handleDonateClick = () => {
     setShowModal(true); 
@@ -19,6 +22,15 @@ export default function Footer() {
 
   const handleCloseModal = () => {
     setShowModal(false); 
+  };
+
+  const handleCopyAccountNumber = () => {
+    navigator.clipboard.writeText("3052514000").then(() => {
+      setCopied(true); // Set copied state to true to show check icon
+      setTimeout(() => setCopied(false), 10000); // Revert to original icon after 10 seconds
+    }).catch((error) => {
+      console.error("Failed to copy text: ", error);
+    });
   };
 
   return (
@@ -82,10 +94,26 @@ export default function Footer() {
       {/* Modal */}
       {showModal && (
         <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50">
-          <div className="bg-white rounded-lg p-6 w-[300px] md:w-[500px] text-center">
+          <div className="bg-white rounded-lg p-6 w-[300px] md:w-[500px] flex flex-col text-center">
             <h2 className="text-xl font-semibold mb-4 text-black">Ministry Account</h2>
             <p className="mb-4 text-black">
-              GTBANK- Avant Garde International Ministries- 0953536112
+              Bank Name: First Bank
+            </p>
+            <p className="mb-4 text-black">
+              Account Name: Ohia Alexander
+            </p>
+            <p className="mb-4 text-black">
+              Account Number: 3052514000 
+              <span onClick={handleCopyAccountNumber} className="cursor-pointer ml-2">
+                {copied ? (
+                  <span className="flex items-center">
+                    <IoIosCheckmarkCircle className="text-green-500 mr-1" />
+                    <span>Copied</span>
+                  </span>
+                ) : (
+                  <LuCopy />
+                )}
+              </span>
             </p>
             <button
               className="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded"
